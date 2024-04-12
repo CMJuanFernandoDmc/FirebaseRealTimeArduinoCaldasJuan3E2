@@ -88,7 +88,7 @@ void setup() {
 }
 
 void loop() {
-  //Verificar si el Firebase está listo y ha transcurrido suficiente tiempo desde el último envío de datos
+  //Verificar si el Firebase está listo y si ha transcurrido suficiente tiempo desde el último envío de datos
   if (Firebase.ready() && (millis() - sendDataPrevMillis > 15000 || sendDataPrevMillis == 0))
   {
     //Lee el estado de los switches
